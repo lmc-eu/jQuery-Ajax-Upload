@@ -202,7 +202,7 @@ if ( !Function.prototype.bind ) {
 		if (options.multiple) multiple = ' multiple ';
 
 		var id = 'ajaxupload' + new Date().getTime();
-		var form = $('<form action="' + s.url + '" method="post" enctype="multipart/form-data" target="' + id + '" />').appendTo('body');
+		var form = $('<form action="' + s.url + '" method="post" enctype="multipart/form-data" target="' + id + '" />');//.appendTo('body');
 		form.css({
 			position: 'relative',
 			top: -1000,
